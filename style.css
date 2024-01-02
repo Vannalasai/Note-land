@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:wght@300;400;500;600&family=Roboto:wght@100;300;400;700&family=Ubuntu:wght@300;400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+#one{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #282e44;
+    text-align: center;
+}
+
+i{
+    color: #0fe5df;
+    font-size: 3rem;
+    margin-right: 0.5rem;
+}
+
+h1{
+    color: #fffffe;
+    font-size: 2.5rem;
+    
+}
+
+#two{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.box1{
+    background: #282e44;
+    padding: 2.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.button{
+    border: 1px solid #282e44;
+    background: #282e44;
+    padding: 1.5rem 3rem;
+    position: absolute;
+    bottom: 0;
+}
+
+button{
+    color: black;
+    background: #fffffe;
+    padding: 1rem 6.25rem;
+    border-radius: 12px;
+    cursor: pointer;
+    /* position: absolute; */
+    
+}
+
+#two .box2{
+    background: #02549e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#two .box2 img{
+    height: 20rem;
+}
+
+#two .box2 h4{
+    margin-top: 1.2rem;
+    font-size: 27px;
+    color: #fffffe;
+}
+
+#two .box2 p{
+    margin-top: 1.2rem;
+    font-size: 17px;
+    color: #fffffe;
+}
+
+#three{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    position: relative;
+}
+
+#three hr{
+    width: 23.15rem;
+    height: 5px;
+    background: #fffffe;
+    position: absolute;
+    top: 16%;
+    left: 0;
+}
+
+#three .notes{
+    position: absolute;
+    top: 18%;
+    overflow-y: scroll;
+    height: 500px;
+}
+
+#three .note{
+    background: #fffffe;
+    border: 1px solid #fffffe;
+    padding: 1.7rem;
+    border-radius: 1.7rem;
+    /* margin-top: 1.5rem; */
+    
+    /* position: absolute; */
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#three .note h5{
+    color: #02549e;
+    font-size: 20px;
+}
+
+#three .note p{
+    color: #78909C;
+}
+
+#three .box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #02549e;
+}
+
+#three .popup{
+    background: #02549e;
+    position: absolute;
+    top: 22%;
+    left: 47%;
+    /* z-index: 99999; */
+    opacity: 0;
+    width: 30%;
+    pointer-events: none;
+    transition: all 0.4s;
+}
+
+#three .popup.show{
+    pointer-events: all;
+    opacity: 1;
+}
+
+#three .popup .message{
+    background: #fffffe;
+    border: 1px solid #02549e;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    /* margin: 1rem; */
+}
+
+#three .popup .message input, textarea{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    font-size: 15px;
+    padding: 0.5rem;
+}
+
+#three .popup #createNote{
+    margin-left: 4.5rem;
+    border: none;
+    margin-top: 2rem;
+    cursor: pointer;
+    color: black;
+    background: #fffffe;
+    padding: 0.9rem 6.7rem;
+    border-radius: 12px;
+}
+
+#four{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+#four hr{
+    width: 23.15rem;
+    height: 5px;
+    background: #fffffe;
+}
+
+.note{
+    background: #fffffe;
+    border: 1px solid #fffffe;
+    padding: 1.5rem;
+    margin: 0.5rem;
+    border-radius: 1.7rem;
+    margin-top: 1.5rem;
+}
+
+.note h5{
+    color: #02549e;
+    font-size: 20px;
+}
+
+.note p{
+    color: #78909C;
+}
+
+.box2{
+    background: #02549e;
+}
+
+#five{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+#five hr{
+    width: 23.15rem;
+    height: 5px;
+    background: #fffffe;
+    position: absolute;
+    top: 16%;
+    left: 0;
+}
+
+#five .notes{
+    position: absolute;
+    top: 18%;
+    overflow-y: scroll;
+    height: 500px;
+}
+
+#five .note{
+    background: #fffffe;
+    border: 1px solid #fffffe;
+    padding: 1.7rem;
+    border-radius: 1.7rem;
+    /* margin-top: 1.5rem; */
+    
+    /* position: absolute; */
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.head{
+    background: #fffffe;
+    height: 16.90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.8rem;
+}
+
+.head h1{
+    color: #02549e;
+}
+
+.btns{
+    width: 27%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#newTask{
+    color: #fffffe;
+    background: #00C853;
+    padding: 0.9rem 1.5rem;
+    border-radius: 12px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+#DeleteTask{
+    color: #fffffe;
+    background: #F50057;
+    padding: 0.9rem 1.4rem;
+    border-radius: 12px;
+    cursor: pointer;
+    outline: none; 
+    border: none;
+}
+
+#five .body{
+    border: 1px solid white;
+    background: #fffffe;
+    border-radius: 2rem;
+    padding: 2rem;
+    margin: 3rem;
+    height: 61%;
+}
+
+#five .body h4{
+    color: #02549e;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+#five .body li{
+    font-size: 1.5rem;
+    /* margin-left: 2rem; */
+}
+
+#five .task-preview{
+    position: fixed;
+    top: 0; left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#five .task-preview .preview{
+    display: flex;
+    padding: 2rem;
+    position: relative;
+    margin: 2rem;
+    width: 30%;
+    flex-direction: column;
+}
+
+#five .task-preview .preview.active{
+    display: inline-flex;
+}
+
+#five .task-preview .preview .input-task{
+    padding: 3rem 2rem;
+    margin: 2rem;
+    background: #fffffe;
+    text-align: center;
+    border-radius: 25px;
+}
+
+#five .task-preview .preview .input-task input{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    font-size: 22px;
+}
+
+#five .task-preview .preview .task{
+    color: #fffffe;
+    background: #00C853;
+    padding: 0.9rem 1.5rem;
+    border-radius: 12px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 47%;
+    margin-left: 7rem;
+}
+
+#five .task-preview .preview .fa-xmark{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+    color: #fffffe;
+    font-size: 2rem;
+}
+
+
+
+#six{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+#six .box1 hr{
+    width: 23.15rem;
+    height: 5px;
+    background: #fffffe;
+    position: absolute;
+    top: 16%;
+    left: 0;
+}
+
+#six .notes{
+    position: absolute;
+    top: 18%;
+    overflow-y: scroll;
+    height: 500px;
+}
+
+#six .note{
+    background: #fffffe;
+    border: 1px solid #fffffe;
+    padding: 1.7rem;
+    border-radius: 1.7rem;
+    /* margin-top: 1.5rem; */
+    
+    /* position: absolute; */
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+#six .body{
+    border: 1px solid white;
+    background: #fffffe;
+    border-radius: 2rem;
+    padding: 2rem;
+    margin: 3rem;
+    height: 61%;
+}
+
+#six .body h4{
+    color: #02549e;
+    font-size: 30px;
+    margin: 1rem 0;
+}
+
+#six .body p i{
+    font-size: 30px;
+    margin: 0.7rem 0;
+    margin-right: 1rem;
+}
