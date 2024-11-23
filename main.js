@@ -1,5 +1,3 @@
-
-
 let notesListedRootElements = document.querySelector('#notes');
 let notesListedRootElements1 = document.querySelector('#editNotes');
 let notesListedRootElements2 = document.querySelector('#editNotes1');
